@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,54 +19,120 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
+  <header role="header">
+    <section>
+      <img role="Site Logo" src="images/logo.svg" alt="Sunnyside logo" class="logo">
+      <img role="Menu button" src="images/icon-hamburger.svg" alt="Menu icon" id="menu-button" class="menu-button">
+    </section>
+    <ul class="dropdown-menu" id="dropdown-menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#" class="contact">CONTACT</a></li>
+   </ul>     
+  </header>
+  <section role="Hero section" class="hero">
+    <h1 id="text">WE ARE CREATIVES</h1>
+    <img src="images/icon-arrow-down.svg" alt="Arrow down">
+  </section>
+  <section role="We transform you" role="Second section" class="transform">
+    <section class="egg"></section>
+    <section class="transform-text text">
+      <h1>Transform your brand</h1>
+      <p>We are a full-service creative agency specializing in
+        helping brands grow fast.Engage your clients through compelling
+        visuals that do most of the marketing for you.
+      </p>
+      <p class="learn-more1 learn-more">LEARN MORE</p>
+    </section>
+  </section>
+  <section role="Making you stand out" class="stand-out">
+    <section class="cup"></section>
+    <section role="Third section" class="stand-out-text text">
+      <h1>Stand out to the right audience</h1>
+      <p>Using a collaborative formula of designers, researchers,
+        photographers, videographers, and copywriters, we'll build
+        and extend your brand in digital palces.
+      </p>
+      <p class="learn-more2 learn-more">LEARN MORE</p>
+    </section>
+  </section>
+  <section class="services">
+    <section role="About our graphic design" class="graphic-design">
+      <section class="graphic-design-text">
+        <h1>Graphic Design</h1>
+        <p>Great design makes you memorable. We deliver
+          artwork that underscores your brand message
+           and captures potential client's attention.
+        </p>
+      </section>
+    </section>
+    <section role="About our photography" class="photography">
+      <section class="photography-text">
+        <h1>Photography</h1>
+        <p>Increase your credibility by getting the most stunning,
+          high-quality photos that improve your business image.
+        </p>
+      </section>
+    </section>
+  </section>
+  <section role="Testimonials from clients" class="client-testimonials">
+    <h1>CLIENT TESTIMONIALS</h1>
+    <section class="clients">
+      <section class="testimonial">
+        <img src="images/image-emily.jpg" alt="Emily Photography">
+        <p>We put our trust in Sunnyside and they delivered,
+          making sure our needs were met and deadlines were always hit.
+        </p>
+        <h1>Emily R.</h1>
+        <h2>Marketing Director</h2>
+      </section>
+      <section class="testimonial">
+        <img src="images/image-thomas.jpg" alt="Thomas Photography">
+        <p>Sunnyside's enthusiasm coupled with their keen interest in
+          our brand's success made it a satisfying and enjoyable experience.
+        </p>
+        <h1>Thomas S.</h1>
+        <h2>Chief Operating Officer</h2>
+      </section>
+      <section class="testimonial">
+        <img src="images/image-jennie.jpg" alt="Emily Photography">
+        <p>Incredible end result! Our sales increased over 400% when we
+          worked with Sunnyside. Highly recommended!
+        </p>
+        <h1>Jenie F.</h1>
+        <h2>Business Owner</h2>
+      </section>
+    </section>
+  </section>
+  
+  <footer role="Footer">
+    <section role="Photos gallery" class="gallery">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="" class="gallery1">
+      <img src="images/mobile/image-gallery-orange.jpg" alt="" class="gallery2">
+      <img src="images/mobile/image-gallery-cone.jpg" alt="" class="gallery3">
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" class="gallery4">
+    </section>
+   <section class="footer">
+    <h1>sunnyside</h1>
+    <section class="footer-menu">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </section>
+    <section class="social-medias">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+      <img src="images/icon-pinterest.svg" alt="Pinterest">
+    </section>
+   </section>
+   <div role="Attribution to creator" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/oivatO-soD-sotnaS" target="_blank">Otávio dos Santos Lima</a>.
   </div>
+  </footer>
+  
+  <script src="JS/main.js"></script>
 </body>
-</html>
+</html> 
